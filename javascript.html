@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo</title>
+
+    <style>
+        .seleccionado {
+            border: 2px solid red;
+            outline: none;
+        }
+
+        .contenedor {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            gap: 10px;
+            font-family: Arial;
+        }
+
+        input {
+            padding: 6px;
+        }
+
+        .btn-suma {
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+
+    <script>
+        function cambiaestilo() {
+            document.getElementById("txtnombre").classList.add("seleccionado");
+        }
+
+        function mostrarNombre() {
+            var nombre = document.getElementById("txtnombre").value;
+            alert(nombre);
+        }
+
+        function sumar() {
+            var a = parseFloat(document.getElementById("numA").value) || 0;
+            var b = parseFloat(document.getElementById("numB").value) || 0;
+
+            document.getElementById("resultado").value = a + b;
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <label>Nombre:</label>
+        <input type="text" id="txtnombre" onclick="cambiaestilo()">
+        <input type="button" value="Mostrar nombre" onclick="mostrarNombre()">
+
+        <hr>
+
+        <label>Número A:</label>
+        <input type="text" id="numA">
+
+        <!-- Botón con solo el símbolo + -->
+        <input type="button" value="+" class="btn-suma" onclick="sumar()">
+
+        <label>Número B:</label>
+        <input type="text" id="numB">
+
+        <label>Resultado:</label>
+        <input type="text" id="resultado" readonly>
+
+    </div>
+
+</body>
+</html>

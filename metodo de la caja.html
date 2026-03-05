@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cajas dentro de cajas</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#eef2f7;
+    margin:0;
+    padding:30px;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.contenedor{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+}
+
+/* CUADROS GRANDES */
+.cuadro{
+    width:1000px;
+    height:320px;
+    border:4px solid #222;
+    border-radius:10px;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    grid-template-rows: repeat(3, 1fr);    /* 3 filas */
+    overflow:hidden;
+}
+
+/* CAJAS INTERNAS */
+.caja{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:2px solid white;
+    font-weight:bold;
+    color:white;
+}
+
+/* COLORES CUADRO 1 */
+.cuadro1 .caja:nth-child(odd){
+    background:#4da6ff;
+}
+.cuadro1 .caja:nth-child(even){
+    background:#1e88e5;
+}
+
+/* COLORES CUADRO 2 */
+.cuadro2 .caja:nth-child(odd){
+    background:#26a69a;
+}
+.cuadro2 .caja:nth-child(even){
+    background:#00796b;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:25px;
+}
+</style>
+</head>
+<body>
+
+<h1>Cajas que ocupan todo el cuadro</h1>
+
+<div class="contenedor">
+
+    <!-- CUADRO GRANDE 1 -->
+    <div class="cuadro cuadro1">
+        <div class="caja">1</div>
+        <div class="caja">2</div>
+        <div class="caja">3</div>
+        <div class="caja">4</div>
+        <div class="caja">5</div>
+        <div class="caja">6</div>
+        <div class="caja">7</div>
+        <div class="caja">8</div>
+        <div class="caja">9</div>
+    </div>
+
+    <!-- CUADRO GRANDE 2 -->
+    <div class="cuadro cuadro2">
+        <div class="caja">A</div>
+        <div class="caja">B</div>
+        <div class="caja">C</div>
+        <div class="caja">D</div>
+        <div class="caja">E</div>
+        <div class="caja">F</div>
+        <div class="caja">G</div>
+        <div class="caja">H</div>
+        <div class="caja">I</div>
+    </div>
+
+</div>
+
+</body>
+</html>

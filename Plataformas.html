@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Plataformas - C.R.O</title>
+
+  <style>
+    :root{
+      --bg:#0b0b10;
+      --card:#13131c;
+      --text:#f3f3f7;
+      --muted:#b8b8c7;
+      --accent:#7c4dff;
+      --accent2:#00e676;
+    }
+
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    header{
+      padding: 28px 16px 10px;
+      text-align:center;
+    }
+    header h1{
+      margin:0;
+      font-size: 2.2rem;
+      letter-spacing: 0.5px;
+      color: var(--accent2);
+    }
+    header p{
+      margin:8px 0 0;
+      color: var(--muted);
+    }
+
+    .container{
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 18px 16px 40px;
+    }
+
+    .section{
+      background: var(--card);
+      border-radius: 16px;
+      padding: 18px;
+      margin: 16px 0;
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+    }
+
+    .section h2{
+      margin: 0 0 14px;
+      font-size: 1.4rem;
+      color: var(--accent);
+    }
+
+    .grid{
+      display:grid;
+      gap: 14px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      align-items:start;
+    }
+
+    /* Video responsive */
+    .video{
+      position:relative;
+      width:100%;
+      padding-top:56.25%; /* 16:9 */
+      border-radius: 12px;
+      overflow:hidden;
+      background:#000;
+    }
+    .video iframe{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      border:0;
+    }
+
+    /* Embeds */
+    .embed{
+      border-radius: 12px;
+      overflow:hidden;
+      background:#0f0f15;
+      padding: 10px;
+    }
+
+    /* Maps responsive */
+    .map{
+      position:relative;
+      width:100%;
+      padding-top:56.25%;
+      border-radius: 12px;
+      overflow:hidden;
+      background:#000;
+    }
+    .map iframe{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      border:0;
+    }
+
+    footer{
+      text-align:center;
+      padding: 10px 16px 30px;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+    a{ color: var(--accent2); }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>C.R.O</h1>
+    <p>Plataformas y contenido (YouTube • TikTok • X • Facebook • Maps)</p>
+  </header>
+
+  <div class="container">
+
+    <!-- YOUTUBE -->
+    <section class="section">
+      <h2>YouTube</h2>
+      <div class="grid">
+        <!-- Reemplaza los IDs por videos reales de C.R.O -->
+        <div class="video">
+          <iframe
+            src="https://www.youtube.com/embed/VIDEO_ID_1"
+            title="C.R.O - Video 1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+
+        <div class="video">
+          <iframe
+            src="https://www.youtube.com/embed/VIDEO_ID_2"
+            title="C.R.O - Video 2"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+
+        <div class="video">
+          <iframe
+            src="https://www.youtube.com/embed/VIDEO_ID_3"
+            title="C.R.O - Video 3"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+      <p style="margin:12px 0 0; color:var(--muted);">
+        Tip: abre un video de C.R.O en YouTube y copia el ID después de <b>v=</b> para reemplazar VIDEO_ID_1, etc.
+      </p>
+    </section>
+
+    <!-- TIKTOK -->
+    <section class="section">
+      <h2>TikTok</h2>
+      <div class="grid">
+        <!-- Pega links de TikToks relacionados a C.R.O -->
+        <div class="embed">
+          <blockquote class="tiktok-embed"
+            cite="https://www.tiktok.com/@USUARIO/video/VIDEO_ID_A"
+            data-video-id="VIDEO_ID_A"
+            style="max-width: 605px; min-width: 280px;">
+            <section>
+              <a target="_blank" title="@USUARIO" href="https://www.tiktok.com/@USUARIO?refer=embed">@USUARIO</a>
+              Video relacionado con C.R.O
+            </section>
+          </blockquote>
+        </div>
+
+        <div class="embed">
+          <blockquote class="tiktok-embed"
+            cite="https://www.tiktok.com/@USUARIO2/video/VIDEO_ID_B"
+            data-video-id="VIDEO_ID_B"
+            style="max-width: 605px; min-width: 280px;">
+            <section>
+              <a target="_blank" title="@USUARIO2" href="https://www.tiktok.com/@USUARIO2?refer=embed">@USUARIO2</a>
+              Video relacionado con C.R.O
+            </section>
+          </blockquote>
+        </div>
+
+        <div class="embed">
+          <blockquote class="tiktok-embed"
+            cite="https://www.tiktok.com/@USUARIO3/video/VIDEO_ID_C"
+            data-video-id="VIDEO_ID_C"
+            style="max-width: 605px; min-width: 280px;">
+            <section>
+              <a target="_blank" title="@USUARIO3" href="https://www.tiktok.com/@USUARIO3?refer=embed">@USUARIO3</a>
+              Video relacionado con C.R.O
+            </section>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- X (Twitter) -->
+    <section class="section">
+      <h2>X</h2>
+      <div class="grid">
+        <!-- Reemplaza por tweets reales sobre C.R.O -->
+        <div class="embed">
+          <blockquote class="twitter-tweet">
+            <a href="https://twitter.com/USUARIO/status/ID_TWEET_1">Tweet sobre C.R.O</a>
+          </blockquote>
+        </div>
+
+        <div class="embed">
+          <blockquote class="twitter-tweet">
+            <a href="https://twitter.com/USUARIO/status/ID_TWEET_2">Tweet sobre C.R.O</a>
+          </blockquote>
+        </div>
+
+        <div class="embed">
+          <blockquote class="twitter-tweet">
+            <a href="https://twitter.com/USUARIO/status/ID_TWEET_3">Tweet sobre C.R.O</a>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- FACEBOOK -->
+    <section class="section">
+      <h2>Facebook</h2>
+      <div class="grid">
+        <!-- Reemplaza por posts reales (embed) -->
+        <div class="embed">
+          <iframe
+            src="https://www.facebook.com/plugins/post.php?href=URL_ENCODEADA_DEL_POST_1&show_text=true&width=500"
+            width="500" height="533"
+            style="border:none;overflow:hidden;max-width:100%;"
+            scrolling="no" frameborder="0" allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+
+        <div class="embed">
+          <iframe
+            src="https://www.facebook.com/plugins/post.php?href=URL_ENCODEADA_DEL_POST_2&show_text=true&width=500"
+            width="500" height="533"
+            style="border:none;overflow:hidden;max-width:100%;"
+            scrolling="no" frameborder="0" allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+
+        <div class="embed">
+          <iframe
+            src="https://www.facebook.com/plugins/post.php?href=URL_ENCODEADA_DEL_POST_3&show_text=true&width=500"
+            width="500" height="533"
+            style="border:none;overflow:hidden;max-width:100%;"
+            scrolling="no" frameborder="0" allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- GOOGLE MAPS -->
+    <section class="section">
+      <h2>Google Maps</h2>
+      <div class="map">
+        <!-- Puedes poner un mapa embebido (tuyo o de un lugar relacionado) -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=TU_EMBED_AQUI"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <p style="margin:12px 0 0; color:var(--muted);">
+        Tip: En Google Maps → Compartir → Insertar un mapa → copia el iframe y pega el "src".
+      </p>
+    </section>
+
+  </div>
+
+  <footer>
+    Hecho para <b>C.R.O</b> • Si algunos embeds no cargan, abre el HTML con un servidor (Live Server).
+  </footer>
+
+  <!-- SCRIPTS (solo una vez) -->
+  <script async src="https://www.tiktok.com/embed.js"></script>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+</html>

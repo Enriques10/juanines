@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario Minimalista</title>
+
+<style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    width: 320px;
+}
+
+p{
+    margin-top: 18px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+select,
+input[type="date"],
+input[type="color"],
+input[type="file"]{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    background: #fafafa;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+    margin-right: 6px;
+}
+
+label{
+    margin-right: 12px;
+    color: #555;
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <select name="pais" id="pais">
+        <option value="default">País Favorito</option>
+        <option value="30">Brasil</option>
+        <option value="40">Canadá</option>
+        <option value="50">México</option>
+        <option value="60">EU</option>
+    </select>
+
+    <p>¿Qué color es tu favorito?</p>
+    <label><input type="radio" name="color1" value="red">Rojo</label>
+    <label><input type="radio" name="color1" value="blue">Azul</label>
+    <label><input type="radio" name="color1" value="green">Verde</label>
+
+    <p>¿Cuáles son tus colores favoritos?</p>
+    <label><input type="checkbox" name="color2" value="red">Rojo</label>
+    <label><input type="checkbox" name="color2" value="blue">Azul</label>
+    <label><input type="checkbox" name="color2" value="green">Verde</label>
+
+    <p>¿Cuál es tu fecha de nacimiento?</p>
+    <input type="date" name="fechaNacimiento">
+
+    <p>Coloca tu color favorito</p>
+    <input type="color" name="colorFavorito">
+
+    <p>Coloca una foto</p>
+    <input type="file" name="foto">
+
+</div>
+
+</body>
+</html>
