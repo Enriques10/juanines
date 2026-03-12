@@ -1,19 +1,13 @@
-🌎 Proyecto: EcoMartínez
+🐶 Proyecto: DogMartínez – Comunidad Canina
 
-Plataforma web donde los habitantes de Martínez de la Torre pueden reportar problemas de su colonia.
+Una página donde los habitantes pueden reportar, buscar y ayudar a perros en la ciudad
 
-Ejemplos de reportes:
+🎯 Objetivo
 
-🗑 Basura acumulada
+Crear una plataforma donde la comunidad pueda:
 
-🕳 Baches en calles
+Reportar perros perdidos
 
-💡 Luminarias dañadas
+Reportar perros encontrados
 
-💧 Fugas de agua
-
-🌳 Árboles caídos
-
-🚧 Calles dañadas
-
-Todos los reportes aparecen en un mapa de la ciudad.
+Reportar perros en situación de calle
